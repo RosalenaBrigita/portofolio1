@@ -37,6 +37,9 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import unity from './unity.png';
+import postman from './postman.png';
+import mysql from './mysql.png';
 
 export const assets = {
     user_image,
@@ -77,45 +80,84 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    unity,
+    postman,
+    mysql
 };
 
 export const workData = [
-    {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
-    },
-    {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
-    },
-]
+  {
+    id: 1,
+    title: "Historical RPG with Branching Narrative",
+    category: "Game Dev",
+    bgImage: "/work-historical-rpg.png",
+    link: "https://github.com/RosalenaBrigita/DonBosco",
+    description: "2D historical RPG with Ink-based branching dialogue and hybrid save system."
+  },
+  {
+    id: 2,
+    title: "Culinary RPG Shooter",
+    category: "Game Dev",
+    bgImage: "/work-culinary-rpg.png",
+    link: "https://fullowid.itch.io/journey-to-become-master-chef",
+    description: "3D top-down shooter RPG with crafting, cooking minigames, and companion system."
+  },
+  {
+    id: 3,
+    title: "Mobile Recipe App",
+    category: "Mobile App",
+    bgImage: "/work-recipe-app.png",
+    link: "https://github.com/RosalenaBrigita/RecipeApp-UAS-Mobile",
+    description: "Recipe app with bookmarks, search, and centralized database."
+  },
+  {
+    id: 4,
+    title: "Mobile Music App",
+    category: "Mobile App",
+    bgImage: "/work-music-app.png",
+    link: "https://github.com/RosalenaBrigita/Mobile-Music-App/tree/master",
+    description: "Music mobile app with Home, Explore, and Library sections."
+  },
+  {
+    id: 5,
+    title: "Website Laundry",
+    category: "Web Dev",
+    bgImage: "/work-laundry.png",
+    link: "https://github.com/NandaSyarlaHariyanti/FP_Laundry",
+    description: "Full-stack laundry web app with role-based access and CRUD."
+  },
+  {
+    id: 6,
+    title: "3D Navigation Map DPR RI",
+    category: "Other",
+    bgImage: "/work-navigation-map.png",
+    link: "#",
+    description: "3D navigation map with route paths, travel time, and step counts."
+  },
+  {
+    id: 7,
+    title: "License Plate Recognition System",
+    category: "Other",
+    bgImage: "/work-plate-recognition.png",
+    link: "#",
+    description: "YOLO-based license plate detection with dataset preprocessing."
+  }
+];
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
+    { icon: assets.web_icon, title: 'Game Developer', description: 'Design and develop engaging games using Unity and C#...', link: '' },
+    { icon: assets.web_icon, title: 'Web Developer', description: 'Build responsive and interactive websites using modern web technologies...', link: '' },
     { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.ui_icon, title: 'UI/UX design', description: 'Design intuitive user interfaces and seamless experiences for apps and websites...', link: '' }
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Informatics' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'C#, CSS, JavaScript, PHP, Python' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Computer Science GPA 3.90' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'University', description: 'Universitas Pembangunan Nasional "Veteran" Jawa Timur' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.unity, assets.mysql, assets.figma, assets.git
 ];
