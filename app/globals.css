@@ -1,7 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+@import "tailwindcss";
 
 :root {
   --font-outfit: Outfit, sans-serif;
@@ -14,5 +11,11 @@
 }
 
 body {
+  @apply bg-white text-black;
   font-family: var(--font-outfit);
+}
+
+/* Dark mode global */
+.dark body {
+  @apply bg-[#11001f] text-white;
 }
