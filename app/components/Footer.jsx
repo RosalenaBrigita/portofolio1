@@ -9,19 +9,54 @@ const Footer = ({isDarkMode}) => {
         <Image src={assets.logo} alt='' className='w-36 mx-auto mb-2'/>
 
         <div className='w-max flex items-center gap-2 mx-auto'>
-            <Image src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} alt='' className='w-6'/>
+          <Image 
+            src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} 
+            alt='' 
+            className='w-6'
+          />
+          <a href="mailto:rosalenabrigita@gmail.com" className="hover:underline">
             rosalenabrigita@gmail.com
+          </a>
         </div>
+
       </div>
 
       <div className='text-center sm:flex items-center justify-between border-t
       border-gray-400 mx-[10%] mt-12 py-6'>
         <p>© 2025 Rosalena Brigita. All rights reserved.</p>
         <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
-            <li><a target='_blank' href="https">Github</a></li>
-            <li><a target='_blank' href="https">LinkedIn</a></li>
-            <li><a target='_blank' href="https">Instagram</a></li>
+          <li>
+            <a 
+              href="https://github.com/RosalenaBrigita" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:underline"
+            >
+              Github
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://www.linkedin.com/in/rosalena-brigita/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:underline"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://www.instagram.com/rosalena.brigita/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:underline"
+            >
+              Instagram
+            </a>
+          </li>
         </ul>
+
       </div>
     </div>
   )
