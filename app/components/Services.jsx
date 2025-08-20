@@ -114,6 +114,31 @@ const Services = ({isDarkMode}) => {
             </motion.div>
           ))}  
         </motion.div>
+
+        <motion.div 
+          initial={{opacity: 0}}
+          whileInView={{opacity: 1}}
+          transition={{duration: 0.6, delay: 1}}
+          className="flex justify-center mt-10"
+        >
+          <motion.a 
+            href="https://drive.google.com/drive/folders/1Kw2vBuhP5Wob0EpbGZr9S2Vm3ymH_-b3?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{y: 30, opacity: 0}}
+            whileInView={{y: 0, opacity: 1}}
+            transition={{duration: 0.6, delay: 1.2}} 
+            className={`px-10 py-3 rounded-full flex items-center gap-2 duration-500
+              ${isDarkMode 
+                ? "border border-white text-white bg-transparent hover:bg-[#2a004a]" 
+                : "border border-black text-white bg-black hover:bg-black/80"}`}
+          >
+            View Certificates
+            <Image src={assets.right_arrow_white} alt='' className="w-4"/>
+          </motion.a>
+        </motion.div>
+
+
       </motion.div>
 
       {/* Modal */}

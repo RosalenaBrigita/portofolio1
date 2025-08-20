@@ -44,8 +44,8 @@ const Header = ({isDarkMode}) => {
         initial={{y: 30, opacity: 0}}
         whileInView={{y: 0, opacity: 1}}
         transition={{duration: 0.6, delay: 1}} 
-        className= {`px-10 py-3 border border-white rounded-full text-white flex items-center gap-2 hover:bg-[#2a004a]
-        ${isDarkMode ? "bg-transparent" : "bg-black" }`}>
+        className= {`px-10 py-3 border border-white rounded-full text-white flex items-center gap-2 
+        ${isDarkMode ? "bg-transparent hover:bg-[#2a004a]" : "bg-black hover:bg-black/80" }`}>
         Contact me <Image src={assets.right_arrow_white}
         alt='' className='w-4'/></motion.a>
         
